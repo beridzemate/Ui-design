@@ -1,0 +1,23 @@
+{
+  "name": "ui-design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@sentry/react": "^8.38.0",
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3"
+  }
+}
