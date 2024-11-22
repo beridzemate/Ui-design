@@ -16,8 +16,21 @@ import Navbar from './components/Navbar.jsx';
 import VideoCarousel from './components/VideoCarousel.jsx';
 
 // Import your constants and utils
-import { animateWithGsap } from './utils/animation.js'; // Adjust this if needed
-import { constants } from './constants/index.js'; // Adjust this if needed
+import { animateWithGsap } from './utils/animation.js'; 
+import { constants } from './constants/index.js'; 
+
+  function fetchWithDelay(url, delay) {
+    return new Promise(resolve => setTimeout(() => resolve(fetch(url)), delay));
+  }
+  
+  fetchWithDelay('https://jsonplaceholder.typicode.com/posts', 2000)
+    .then(response => response.json())
+    .then(data => {
+      console.log('Data fetched after delay:', data);
+    })
+    .catch(error => console.error('Error:', error));
+  
+
 
 const App = () => {
   return (
